@@ -366,6 +366,7 @@ The final EDA was performed using the cleaned and processed dataset.
 
 This analysis identifies which payment instruments contribute the highest transaction value and volume.
 
+##### Top Payment Instruments by Transaction Value
 | Payment Instrument | Payment Category | Total Volume | Total Value | Average Growth Rate |
 |---|---|---:|---:|---:|
 | Cheque | Traditional | 354.74 million | RM6.82 trillion | 0.19% |

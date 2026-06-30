@@ -366,6 +366,15 @@ The final EDA was performed using the cleaned and processed dataset.
 
 This analysis identifies which payment instruments contribute the highest transaction value and volume.
 
+| Payment Instrument | Payment Category | Total Volume | Total Value | Average Growth Rate |
+|---|---|---:|---:|---:|
+| Cheque | Traditional | 354.74 million | RM6.82 trillion | 0.19% |
+| E-money | Digital Online | 25.84 billion | RM770.09 billion | 4.24% |
+| Credit Online | Digital Online | 2.38 billion | RM660.08 billion | 0.91% |
+| Debit F2F | Card Face-to-Face | 7.09 billion | RM610.56 billion | 2.88% |
+| Credit F2F | Card Face-to-Face | 2.73 billion | RM574.84 billion | 2.39% |
+| Debit Online | Digital Online | 2.04 billion | RM173.83 billion | 2.05% |
+
 <p align="center">
   <a href="images/payment_instrument_ranking.png">
     <img src="images/payment_instrument_ranking.png" alt="Payment Instrument Ranking" width="650">
@@ -374,9 +383,11 @@ This analysis identifies which payment instruments contribute the highest transa
 
 **Key interpretation:**
 
-Cheque has the highest total transaction value, with a total value of approximately **RM6.82 trillion**. This indicates that although cheque is a traditional payment method, it may still involve high-value transactions, especially for business or institutional payments.
+Cheque has the highest total transaction value, with approximately **RM6.82 trillion**. This suggests that although cheque is a traditional payment method, it may still be used for high-value transactions, especially by businesses or institutions.
 
-E-money shows very high transaction volume and strong growth. E-money recorded approximately **25.84 billion transactions** and a total value of approximately **RM770.09 billion**. This suggests that e-money is widely used for frequent smaller-value transactions and is an important indicator of cashless payment adoption.
+E-money has the highest transaction volume, with approximately **25.84 billion transactions**, and a total value of approximately **RM770.09 billion**. This suggests that e-money is widely used for frequent smaller-value transactions and is an important indicator of cashless payment adoption.
+
+Overall, transaction value and transaction volume should be interpreted differently. Cheque dominates in value, while e-money dominates in volume and growth.
 
 <p align="right"><a href="#-navigation">⬆ Back to Navigation</a></p>
 

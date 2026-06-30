@@ -758,10 +758,10 @@ Future work can improve the machine learning model by:
 ## 📁 Repository Structure
 
 ```text
-digital-payment-analytics-malaysia/
+Final_Report_Data_Management/
 │
 ├── images/
-|   ├── payment_instrument_ranking.png
+│   ├── payment_instrument_ranking.png
 │   ├── monthly_payment_trend.png
 │   ├── emoney_growth.png
 │   ├── digital_vs_traditional.png

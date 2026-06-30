@@ -387,7 +387,9 @@ E-money shows very high transaction volume and strong growth. E-money recorded a
 This analysis shows total transaction value and volume by month.
 
 <p align="center">
-  <img src="images/monthly_payment_trend.png" alt="Monthly Payment Trend" width="850">
+  <a href="images/payment_instrument_ranking.png">
+    <img src="images/payment_instrument_ranking.png" alt="Payment Instrument Ranking" width="650">
+  </a>
 </p>
 
 **Key interpretation:**
@@ -405,7 +407,9 @@ A noticeable drop appears around 2020, which may be related to the COVID-19 pand
 E-money is an important indicator of cashless payment adoption in Malaysia.
 
 <p align="center">
-  <img src="images/emoney_growth.png" alt="E-money Growth" width="850">
+  <a href="images/emoney_growth.png">
+    <img src="images/emoney_growth.png" alt="E-money Growth" width="650">
+  </a>
 </p>
 
 **Key interpretation:**
@@ -427,7 +431,9 @@ This analysis compares three payment categories:
 - Card face-to-face
 
 <p align="center">
-  <img src="images/digital_vs_traditional.png" alt="Digital vs Traditional Payment Trend" width="850">
+  <a href="images/digital_vs_traditional.png">
+    <img src="images/digital_vs_traditional.png" alt="Digital vs Traditional Payment" width="650">
+  </a>
 </p>
 
 **Key interpretation:**
@@ -443,7 +449,9 @@ However, the digital online category shows a clear upward trend, especially from
 ### 5. Annual Transaction Value by Payment Category
 
 <p align="center">
-  <img src="images/annual_payment_category.png" alt="Annual Transaction Value by Payment Category" width="850">
+  <a href="images/annual_payment_category.png">
+    <img src="images/annual_payment_category.png" alt="Annual Payment Category" width="650">
+  </a>
 </p>
 
 **Key interpretation:**
@@ -459,11 +467,15 @@ In contrast, the digital online category shows steady growth across the years. T
 ### 6. Payment Behaviour with Interest Rate and Inflation
 
 <p align="center">
-  <img src="images/payment_economic_context.png" alt="Payment Behaviour with Economic Conditions" width="850">
+  <a href="images/payment_economic_context.png">
+    <img src="images/payment_economic_context.png" alt="Payment and Economic Context" width="650">
+  </a>
 </p>
 
 <p align="center">
-  <img src="images/interest_inflation_trend.png" alt="Interest Rate and Inflation Trend" width="850">
+  <a href="images/interest_inflation_trend.png">
+    <img src="images/interest_inflation_trend.png" alt="Interest Rate and Inflation Trend" width="650">
+  </a>
 </p>
 
 **Key interpretation:**
@@ -558,7 +570,9 @@ The predicted growth rate is calculated by comparing the model’s predicted val
 | Decline | Predicted growth rate < -5% |
 
 <p align="center">
-  <img src="images/prediction_trend_category.png" alt="Prediction Trend Category" width="750">
+  <a href="images/prediction_trend_category.png">
+    <img src="images/prediction_trend_category.png" alt="Prediction Trend Category" width="650">
+  </a>
 </p>
 
 ### Prediction Category Summary

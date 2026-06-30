@@ -367,8 +367,8 @@ The final EDA was performed using the cleaned and processed dataset.
 This analysis identifies which payment instruments contribute the highest transaction value and volume.
 
 <p align="center">
-  <a href="images/monthly_payment_trend.png">
-    <img src="images/monthly_payment_trend.png" alt="Monthly Payment Trend" width="650">
+  <a href="images/payment_instrument_ranking.png">
+    <img src="images/payment_instrument_ranking.png" alt="Payment Instrument Ranking" width="650">
   </a>
 </p>
 
@@ -387,8 +387,8 @@ E-money shows very high transaction volume and strong growth. E-money recorded a
 This analysis shows total transaction value and volume by month.
 
 <p align="center">
-  <a href="images/payment_instrument_ranking.png">
-    <img src="images/payment_instrument_ranking.png" alt="Payment Instrument Ranking" width="650">
+  <a href="images/monthly_payment_trend.png">
+    <img src="images/monthly_payment_trend.png" alt="Monthly Payment Trend" width="650">
   </a>
 </p>
 

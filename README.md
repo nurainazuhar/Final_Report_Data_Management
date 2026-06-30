@@ -1,6 +1,6 @@
 <h1 align="center">
 <p align="center">
-  <img src="images/cover.png" alt="Digital Payment Analytics Cover" width="70&">
+  <img src="images/cover.png" alt="Digital Payment Analytics Cover" width="70%">
 </p>
 </h1>
 
@@ -13,9 +13,6 @@
   <img src="https://img.shields.io/badge/PySpark-Machine%20Learning-green?style=for-the-badge">
 </p>
 
-<p align="center">
-  🐘 HDFS • 🐝 Hive • ⚡ Spark • 🗄️ Cassandra • 📓 Zeppelin • 🐍 PySpark
-</p>
 
 ---
 

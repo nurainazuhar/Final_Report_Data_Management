@@ -112,10 +112,7 @@ The objectives of this project are:
 
 1. To build a big data pipeline for Malaysian digital payment datasets using **HDFS, Hive, Spark, Cassandra, and Zeppelin**.
 2. To analyse digital payment behaviour and economic indicators by cleaning, integrating, and visualising payment instruments, interest rates, and CPI inflation data.
-3. To develop a machine learning model to predict monthly transaction value.
-4. To convert prediction results into business-friendly trend categories.
-5. To store selected prediction outputs in Cassandra for fast retrieval and reporting.
-6. To present the entire workflow inside a Zeppelin notebook as the final project report.
+3. To develop a machine learning model to predict monthly transaction value and store selected prediction outputs in Cassandra for fast retrieval and reporting.
 
 <p align="right"><a href="#-navigation">⬆ Back to Navigation</a></p>
 
@@ -763,28 +760,21 @@ Future work can improve the machine learning model by:
 ```text
 digital-payment-analytics-malaysia/
 │
-├── assets/
-│   └── cover.jpeg
-│
-├── hive/
-│   ├── create_raw_tables.sql
-│   └── validation_queries.sql
-│
-├── cassandra/
-│   └── cassandra_payment_predictions.cql
-│
-├── zeppelin/
-│   ├── notebook.json
-│   └── screenshots/
-│
-├── visualizations/
-│   ├── payment_instrument_ranking.png
+├── images/
+|   ├── payment_instrument_ranking.png
 │   ├── monthly_payment_trend.png
 │   ├── emoney_growth.png
 │   ├── digital_vs_traditional.png
 │   ├── annual_payment_category.png
 │   ├── payment_economic_context.png
 │   ├── interest_inflation_trend.png
+│   └── cover.png
+
+├── P161828_Final_Report_STQD6324.json
+│  
+│
+├── visualizations/
+│   
 │   └── prediction_trend_category.png
 │
 └── README.md
@@ -852,11 +842,13 @@ Insights and conclusion
 
 ### 4. Load prediction results into Cassandra
 
-After prediction output is saved to HDFS:
+After prediction output is saved to HDFS, copy the prediction CSV file from HDFS into the local Linux temporary directory.
 
 ```bash
 hdfs dfs -cat /user/maria_dev/STQD6324_digital_payment/processed/payment_predictions/part-*.csv \
 > /tmp/payment_predictions.csv
+
+head /tmp/payment_predictions.csv
 ```
 
 Then open Cassandra shell:
@@ -865,7 +857,63 @@ Then open Cassandra shell:
 cqlsh
 ```
 
-Create keyspace and table, then load the CSV file using the Cassandra `COPY` command.
+Create the keyspace and table:
+
+```sql
+CREATE KEYSPACE IF NOT EXISTS digital_payments
+WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+
+USE digital_payments;
+
+DROP TABLE IF EXISTS payment_predictions;
+
+CREATE TABLE payment_predictions (
+    record_date text,
+    instrument text,
+    payment_category text,
+    payment_value double,
+    predicted_value double,
+    previous_month_value double,
+    predicted_growth_rate double,
+    trend_category text,
+    avg_interest_rate double,
+    inflation_yoy double,
+    PRIMARY KEY ((instrument), record_date)
+);
+```
+
+Validate the Cassandra table structure:
+
+```sql
+DESCRIBE TABLE payment_predictions;
+```
+
+Load the prediction CSV file into Cassandra:
+
+```sql
+COPY payment_predictions (
+    record_date,
+    instrument,
+    payment_category,
+    payment_value,
+    predicted_value,
+    previous_month_value,
+    predicted_growth_rate,
+    trend_category,
+    avg_interest_rate,
+    inflation_yoy
+)
+FROM '/tmp/payment_predictions.csv'
+WITH HEADER = true;
+```
+
+Validate the inserted records:
+
+```sql
+SELECT COUNT(*) FROM payment_predictions;
+
+SELECT * FROM payment_predictions LIMIT 10;
+```
 
 <p align="right"><a href="#-navigation">⬆ Back to Navigation</a></p>
 

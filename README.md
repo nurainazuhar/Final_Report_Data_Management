@@ -768,14 +768,10 @@ digital-payment-analytics-malaysia/
 │   ├── annual_payment_category.png
 │   ├── payment_economic_context.png
 │   ├── interest_inflation_trend.png
+│   ├── prediction_trend_category.png
 │   └── cover.png
-
-├── P161828_Final_Report_STQD6324.json
-│  
 │
-├── visualizations/
-│   
-│   └── prediction_trend_category.png
+├── P161828_Final_Report_STQD6324.json
 │
 └── README.md
 ```

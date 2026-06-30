@@ -144,7 +144,7 @@ Important columns:
 
 | Column | Description |
 |---|---|
-| `record_date` | Monthly date of transaction record |
+| `date` | Monthly date of transaction record |
 | `instrument` | Type of payment instrument |
 | `value` | Total transaction value |
 | `volume` | Total number of transactions |
@@ -170,7 +170,7 @@ Important columns:
 
 | Column | Description |
 |---|---|
-| `record_date` | Monthly date |
+| `date` | Monthly date |
 | `bank` | Bank category |
 | `rate_type` | Type of interest rate |
 | `value` | Interest rate value |
@@ -185,7 +185,7 @@ Important columns:
 
 | Column | Description |
 |---|---|
-| `record_date` | Monthly date |
+| `date` | Monthly date |
 | `division` | CPI category |
 | `inflation_yoy` | Year-on-year inflation |
 | `inflation_mom` | Month-on-month inflation |
